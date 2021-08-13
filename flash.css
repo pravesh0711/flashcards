@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("world.png");
+    /*box-sizing: border-box;*/
+    background-size: cover;
+}
+.flex-box{
+    display: grid;
+
+}
+h1{
+    font-family: 'Palette Mosaic', cursive;
+}
+.flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    padding: 14px 359px;
+}
+.card {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    border: 2px solid black;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 23px;
+    transform-style: preserve-3d;
+    transition: 2.5s ease-out;
+
+}
+.card:hover{
+    transform: rotateY(180deg);
+    background-color: blue;
+}
+
+.front,
+.back{
+    font-family: 'STIX Two Text', serif;
+    text-align: center;
+    position: absolute;
+    font-size: 2em;
+    font-style: bold;
+
+    /*position: absolute;*/
+
+}
+.front{
+    backface-visibility: hidden;
+}
+
+.back{
+    display: inline;
+    backface-visibility: visible;
+    transform: rotateY(180deg);
+
+}
+h1{
+    text-align: center;
+}
+.too-c{
+    background-color: azure;
+}
